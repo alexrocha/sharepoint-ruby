@@ -16,10 +16,6 @@ module Sharepoint
     def request_body ; @body ; end
   end
 
-  # @deprecated Use DataError instead
-  SPException = DataError
-  deprecate_constant :SPException
-
   class UnsupportedType < Error
     attr_accessor :type_name
 
